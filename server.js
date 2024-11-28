@@ -116,7 +116,7 @@ function startQuiz() {
 function endQuiz() {
     clearInterval(quizTimer);
     rl.close();
-    const passMark = Math.ceil(questions.length * 0.8); // 80% of total questions
+    const passMark = Math.ceil(questions.length * 0.8); 
     const passPercentage = (passMark / questions.length) * 100;
     console.log(`\nQuiz over! Your score: ${score}/${questions.length}`);
     console.log(`To pass the quiz, you needed at least ${passMark}/${questions.length} (${passPercentage}%).`);
